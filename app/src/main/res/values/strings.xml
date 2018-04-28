@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ocean Fish &amp; Chips</string>
+    <string name="ofc">Ocean Fish &amp; Chips</string>
+    <string name="udacity">Ocean Fish &amp; Chips</string>
+    <string name="phone">(916) 483-3730</string>
+    <string name="website">http://oceanfishandchips.net/</string>
+    <string name="address">2558 Cottage Way \nSacramento, CA 95825</string>
+    <string name="header">Dolphin Ocean fish and Chips (916) 483–3730 </string>
+    <string name="mainPicture">curled onion fries</string>
+    <string name="hours">Monday – Saturday: 11AM-9PM\nSunday: Closed</string>
+</resources>
