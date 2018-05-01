@@ -1,6 +1,5 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
@@ -8,95 +7,107 @@
 
     >
 
-    <ImageView
-        android:contentDescription="@string/header"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1.5"
-        android:scaleType="centerCrop"
-        android:src="@drawable/cropped_heading20170911" />
-
-    <ImageView
-        android:contentDescription="@string/mainPicture"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="4"
-        android:scaleType="centerCrop"
-        android:src="@drawable/fish_and_chips01" />
-
-    <TextView
-        android:contentDescription="@string/ofc"
-        android:text="@string/ofc"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_weight="0.06"
-        android:fontFamily="sans-serif-condensed"
-        android:textColor="@color/textcolor"
-        android:textSize="@dimen/my_size_medium"
-        android:textStyle="italic" />
-    <TextView
-        android:contentDescription="@string/phone"
-        android:text="@string/phone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:autoLink="phone"
-        android:layout_weight="0.06"
-        android:fontFamily="sans-serif-light"
-        android:textColor="@color/textcolor"
-        android:textSize="@dimen/my_size_large"
-        android:textStyle="italic" />
-    <TextView
-        android:contentDescription="@string/website"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autoLink="web"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_weight="0.06"
-        android:fontFamily="sans-serif-light"
-        android:text="@string/website"
-        android:textColor="@color/textcolor"
-        android:textSize="@dimen/font_size_medium"
-        android:textStyle="italic" />
-    <TextView
-        android:contentDescription="@string/address"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autoLink="map"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_weight="0.06"
-        android:fontFamily="sans-serif-light"
-        android:text="@string/address"
-        android:textColor="@color/textcolor"
-        android:textSize="@dimen/font_size_medium"
-        android:textStyle="italic" />
-
-    <TextView
-        android:contentDescription="@string/hours"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:layout_weight="0.06"
-        android:fontFamily="sans-serif-light"
-        android:text="@string/hours"
-        android:textColor="@color/textcolor"
-        android:textSize="@dimen/font_size_medium"
-        android:textStyle="italic" />
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
 
 
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:contentDescription="@string/header"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cropped_heading20170911" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:contentDescription="@string/mainPicture"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fish_and_chips01" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_weight="0.06"
+            android:contentDescription="@string/ofc"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/ofc"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/my_size_medium"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_weight="0.06"
+            android:autoLink="phone"
+            android:contentDescription="@string/phone"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/phone"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/my_size_large"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_weight="0.06"
+            android:autoLink="web"
+            android:contentDescription="@string/website"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/website"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/font_size_medium"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_weight="0.06"
+            android:autoLink="map"
+            android:contentDescription="@string/address"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/address"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/font_size_medium"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_weight="0.06"
+            android:contentDescription="@string/hours"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/hours"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/font_size_medium"
+            android:textStyle="italic" />
 
 
-</LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
